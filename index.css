@@ -1,0 +1,91 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.main{
+  height: 600px;
+  width: 100%;
+  background-color: gray;
+  overflow: hidden;
+
+}
+.main_ch{
+  height: 600px;
+  width: 500%;
+  background-color:red;
+  display: flex;
+  animation-name: slider;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+  
+  
+}
+.ele{
+  background-color: green;
+  height: 600px;
+  width: 20%;
+  background-size: 100% 100%;
+ 
+}
+
+.ele:nth-child(1){
+  background-image: url(img1.jpg);
+ 
+
+}
+
+.ele:nth-child(2){
+  background-image: url(img2.jpg);
+}
+
+.ele:nth-child(3){
+  background-image: url(img3.jpg);
+}
+
+.ele:nth-child(4){
+  background-image: url(img5.jpg);
+}
+
+.ele:nth-child(5){
+  background-image: url(img1.jpg);
+}
+
+@keyframes slider{
+  
+  12.5%{
+    margin-left: -100%;
+  }
+  
+  25%{
+    margin-left: -100%;
+  }
+  
+  37.5%{
+    margin-left: -200%;
+  }
+  50%{
+    margin-left: -200%;
+  }
+  62.5%{
+    margin-left: -300%;
+  }
+  
+  75%{
+    margin-left: -300%;
+  }
+  87.5%{
+    margin-left: -400%
+  }
+  
+  
+  100%{
+    margin-left: -400%
+  }
+  
+  
+}
+
+.main_ch:hover{
+  animation-play-state: paused;
+}
